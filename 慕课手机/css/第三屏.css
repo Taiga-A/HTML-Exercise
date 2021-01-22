@@ -1,0 +1,108 @@
+.s3 {
+    height: 800px;
+    background-color: #a71316;
+    width: 100%;
+    overflow: hidden;
+}
+
+.s3_ {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1200px;
+    height: 800px;
+}
+
+.s3_text {
+    color: white;
+}
+
+.s3_text_h {
+    position: relative;
+    display: block;
+    font-size: 36px;
+    font-weight: normal;
+    top: 85px;
+    left: 10px;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 1s;
+}
+
+.s3_text_h_in {
+    transform: translate(0, -80px);
+    opacity: 0;
+}
+
+.s3_text_t {
+    position: relative;
+    font-size: 16px;
+    top: 120px;
+    left: 10px;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 1s;
+}
+
+.s3_text_t_in {
+    transform: translate(0, 80px);
+    opacity: 0;
+}
+
+.p3 {
+    position: relative;
+    left: 465px;
+    top: 100px;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all 1s 0.5s;
+}
+
+.p3_in {
+    transform: translate(0, 280px);
+    opacity: 0;
+}
+
+.s3_b {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 400px;
+    height: 275px;
+    margin-top: 280px;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.7s 1s;
+}
+
+.s3_b_in {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.s3_b_b {
+    font-size: 14px;
+    cursor: pointer;
+    width: 138px;
+    height: 117px;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255, 0.5);
+    border-style: solid;
+    border-radius: 2%;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    float: left;
+    transition: all 0.5s;
+}
+
+.s3_b_b:hover {
+    transform: scale(1.05);
+    border-color: white;
+}
+
+.s3_b_b_h {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}

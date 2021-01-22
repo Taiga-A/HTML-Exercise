@@ -1,0 +1,97 @@
+.s2 {
+    background-color: #fafafa;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.s2_head {
+    text-align: center;
+    position: relative;
+    color: red;
+    font-size: 42px;
+    top: 80px;
+    width: 100%;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+.s2_head_in {
+    transform: translate(0, -80px);
+    opacity: 0;
+}
+
+.s2_text {
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    top: 135px;
+    width: 100%;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s;
+}
+
+.s2_text_in {
+    transform: translate(0, 80px);
+    opacity: 0;
+}
+
+.s2_phone {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    top: 170px;
+    text-align: center;
+    height: 533px;
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 1s 0.7s;
+}
+
+.s2_phone_in {
+    transform: translate(0, 280px);
+    opacity: 0;
+}
+
+.p2 {
+    display: inline-block;
+    position: relative;
+}
+
+.p2_text1 {
+    line-height: 24px;
+    top: 50px;
+    left: 550px;
+    width: 111px;
+    height: 21px;
+    font-size: 24px;
+    padding-left: 111px;
+    position: absolute;
+    background: url(../img/icon-point-left.png) no-repeat left;
+}
+
+.p2_text2 {
+    line-height: 24px;
+    top: 180px;
+    left: -125px;
+    width: 111px;
+    height: 21px;
+    font-size: 24px;
+    padding-right: 111px;
+    position: absolute;
+    background: url(../img/icon-point-right.png) no-repeat right;
+}
+
+.p2_text3 {
+    line-height: 24px;
+    top: 400px;
+    left: 700px;
+    width: 111px;
+    height: 21px;
+    font-size: 24px;
+    padding-left: 111px;
+    position: absolute;
+    background: url(../img/icon-point-left.png) no-repeat left;
+}
