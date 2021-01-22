@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" href="./css.css" type="text/CSS">
+    <script src="./game.js"></script>
+</head>
+
+<body>
+
+    <!--游戏区-->
+    <div class="outsideblock">
+        <div class="line" id="null">
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="null">
+            <div class="block wall"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block b_"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__0">
+            <div class="block wall"></div>
+            <div class="block b_" id="_0_1"></div>
+            <div class="block b_" id="_0_2"></div>
+            <div class="block b_" id="_0_3"></div>
+            <div class="block b_" id="_0_4"></div>
+            <div class="block b_" id="_0_5"></div>
+            <div class="block b_" id="_0_6"></div>
+            <div class="block b_" id="_0_7"></div>
+            <div class="block b_" id="_0_8"></div>
+            <div class="block b_" id="_0_9"></div>
+            <div class="block b_" id="_0_10"></div>
+            <div class="block b_" id="_0_11"></div>
+            <div class="block b_" id="_0_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__1">
+            <div class="block wall"></div>
+            <div class="block b_" id="_1_1"></div>
+            <div class="block b_" id="_1_2"></div>
+            <div class="block b_" id="_1_3"></div>
+            <div class="block b_" id="_1_4"></div>
+            <div class="block b_" id="_1_5"></div>
+            <div class="block b_" id="_1_6"></div>
+            <div class="block b_" id="_1_7"></div>
+            <div class="block b_" id="_1_8"></div>
+            <div class="block b_" id="_1_9"></div>
+            <div class="block b_" id="_1_10"></div>
+            <div class="block b_" id="_1_11"></div>
+            <div class="block b_" id="_1_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__2">
+            <div class="block wall"></div>
+            <div class="block b_" id="_2_1"></div>
+            <div class="block b_" id="_2_2"></div>
+            <div class="block b_" id="_2_3"></div>
+            <div class="block b_" id="_2_4"></div>
+            <div class="block b_" id="_2_5"></div>
+            <div class="block b_" id="_2_6"></div>
+            <div class="block b_" id="_2_7"></div>
+            <div class="block b_" id="_2_8"></div>
+            <div class="block b_" id="_2_9"></div>
+            <div class="block b_" id="_2_10"></div>
+            <div class="block b_" id="_2_11"></div>
+            <div class="block b_" id="_2_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__3">
+            <div class="block wall"></div>
+            <div class="block b_" id="_3_1"></div>
+            <div class="block b_" id="_3_2"></div>
+            <div class="block b_" id="_3_3"></div>
+            <div class="block b_" id="_3_4"></div>
+            <div class="block b_" id="_3_5"></div>
+            <div class="block b_" id="_3_6"></div>
+            <div class="block b_" id="_3_7"></div>
+            <div class="block b_" id="_3_8"></div>
+            <div class="block b_" id="_3_9"></div>
+            <div class="block b_" id="_3_10"></div>
+            <div class="block b_" id="_3_11"></div>
+            <div class="block b_" id="_3_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__4">
+            <div class="block wall"></div>
+            <div class="block b_" id="_4_1"></div>
+            <div class="block b_" id="_4_2"></div>
+            <div class="block b_" id="_4_3"></div>
+            <div class="block b_" id="_4_4"></div>
+            <div class="block b_" id="_4_5"></div>
+            <div class="block b_" id="_4_6"></div>
+            <div class="block b_" id="_4_7"></div>
+            <div class="block b_" id="_4_8"></div>
+            <div class="block b_" id="_4_9"></div>
+            <div class="block b_" id="_4_10"></div>
+            <div class="block b_" id="_4_11"></div>
+            <div class="block b_" id="_4_12"></div>
+            <div class="block wall"></div>
+            <div class="redline"></div>
+        </div>
+        <div class="line" id="__5">
+            <div class="block wall"></div>
+            <div class="block b_" id="_5_1"></div>
+            <div class="block b_" id="_5_2"></div>
+            <div class="block b_" id="_5_3"></div>
+            <div class="block b_" id="_5_4"></div>
+            <div class="block b_" id="_5_5"></div>
+            <div class="block b_" id="_5_6"></div>
+            <div class="block b_" id="_5_7"></div>
+            <div class="block b_" id="_5_8"></div>
+            <div class="block b_" id="_5_9"></div>
+            <div class="block b_" id="_5_10"></div>
+            <div class="block b_" id="_5_11"></div>
+            <div class="block b_" id="_5_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__6">
+            <div class="block wall"></div>
+            <div class="block b_" id="_6_1"></div>
+            <div class="block b_" id="_6_2"></div>
+            <div class="block b_" id="_6_3"></div>
+            <div class="block b_" id="_6_4"></div>
+            <div class="block b_" id="_6_5"></div>
+            <div class="block b_" id="_6_6"></div>
+            <div class="block b_" id="_6_7"></div>
+            <div class="block b_" id="_6_8"></div>
+            <div class="block b_" id="_6_9"></div>
+            <div class="block b_" id="_6_10"></div>
+            <div class="block b_" id="_6_11"></div>
+            <div class="block b_" id="_6_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__7">
+            <div class="block wall"></div>
+            <div class="block b_" id="_7_1"></div>
+            <div class="block b_" id="_7_2"></div>
+            <div class="block b_" id="_7_3"></div>
+            <div class="block b_" id="_7_4"></div>
+            <div class="block b_" id="_7_5"></div>
+            <div class="block b_" id="_7_6"></div>
+            <div class="block b_" id="_7_7"></div>
+            <div class="block b_" id="_7_8"></div>
+            <div class="block b_" id="_7_9"></div>
+            <div class="block b_" id="_7_10"></div>
+            <div class="block b_" id="_7_11"></div>
+            <div class="block b_" id="_7_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__8">
+            <div class="block wall"></div>
+            <div class="block b_" id="_8_1"></div>
+            <div class="block b_" id="_8_2"></div>
+            <div class="block b_" id="_8_3"></div>
+            <div class="block b_" id="_8_4"></div>
+            <div class="block b_" id="_8_5"></div>
+            <div class="block b_" id="_8_6"></div>
+            <div class="block b_" id="_8_7"></div>
+            <div class="block b_" id="_8_8"></div>
+            <div class="block b_" id="_8_9"></div>
+            <div class="block b_" id="_8_10"></div>
+            <div class="block b_" id="_8_11"></div>
+            <div class="block b_" id="_8_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__9">
+            <div class="block wall"></div>
+            <div class="block b_" id="_9_1"></div>
+            <div class="block b_" id="_9_2"></div>
+            <div class="block b_" id="_9_3"></div>
+            <div class="block b_" id="_9_4"></div>
+            <div class="block b_" id="_9_5"></div>
+            <div class="block b_" id="_9_6"></div>
+            <div class="block b_" id="_9_7"></div>
+            <div class="block b_" id="_9_8"></div>
+            <div class="block b_" id="_9_9"></div>
+            <div class="block b_" id="_9_10"></div>
+            <div class="block b_" id="_9_11"></div>
+            <div class="block b_" id="_9_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__10">
+            <div class="block wall"></div>
+            <div class="block b_" id="_10_1"></div>
+            <div class="block b_" id="_10_2"></div>
+            <div class="block b_" id="_10_3"></div>
+            <div class="block b_" id="_10_4"></div>
+            <div class="block b_" id="_10_5"></div>
+            <div class="block b_" id="_10_6"></div>
+            <div class="block b_" id="_10_7"></div>
+            <div class="block b_" id="_10_8"></div>
+            <div class="block b_" id="_10_9"></div>
+            <div class="block b_" id="_10_10"></div>
+            <div class="block b_" id="_10_11"></div>
+            <div class="block b_" id="_10_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__11">
+            <div class="block wall"></div>
+            <div class="block b_" id="_11_1"></div>
+            <div class="block b_" id="_11_2"></div>
+            <div class="block b_" id="_11_3"></div>
+            <div class="block b_" id="_11_4"></div>
+            <div class="block b_" id="_11_5"></div>
+            <div class="block b_" id="_11_6"></div>
+            <div class="block b_" id="_11_7"></div>
+            <div class="block b_" id="_11_8"></div>
+            <div class="block b_" id="_11_9"></div>
+            <div class="block b_" id="_11_10"></div>
+            <div class="block b_" id="_11_11"></div>
+            <div class="block b_" id="_11_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__12">
+            <div class="block wall"></div>
+            <div class="block b_" id="_12_1"></div>
+            <div class="block b_" id="_12_2"></div>
+            <div class="block b_" id="_12_3"></div>
+            <div class="block b_" id="_12_4"></div>
+            <div class="block b_" id="_12_5"></div>
+            <div class="block b_" id="_12_6"></div>
+            <div class="block b_" id="_12_7"></div>
+            <div class="block b_" id="_12_8"></div>
+            <div class="block b_" id="_12_9"></div>
+            <div class="block b_" id="_12_10"></div>
+            <div class="block b_" id="_12_11"></div>
+            <div class="block b_" id="_12_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__13">
+            <div class="block wall"></div>
+            <div class="block b_" id="_13_1"></div>
+            <div class="block b_" id="_13_2"></div>
+            <div class="block b_" id="_13_3"></div>
+            <div class="block b_" id="_13_4"></div>
+            <div class="block b_" id="_13_5"></div>
+            <div class="block b_" id="_13_6"></div>
+            <div class="block b_" id="_13_7"></div>
+            <div class="block b_" id="_13_8"></div>
+            <div class="block b_" id="_13_9"></div>
+            <div class="block b_" id="_13_10"></div>
+            <div class="block b_" id="_13_11"></div>
+            <div class="block b_" id="_13_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__14">
+            <div class="block wall"></div>
+            <div class="block b_" id="_14_1"></div>
+            <div class="block b_" id="_14_2"></div>
+            <div class="block b_" id="_14_3"></div>
+            <div class="block b_" id="_14_4"></div>
+            <div class="block b_" id="_14_5"></div>
+            <div class="block b_" id="_14_6"></div>
+            <div class="block b_" id="_14_7"></div>
+            <div class="block b_" id="_14_8"></div>
+            <div class="block b_" id="_14_9"></div>
+            <div class="block b_" id="_14_10"></div>
+            <div class="block b_" id="_14_11"></div>
+            <div class="block b_" id="_14_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__15">
+            <div class="block wall"></div>
+            <div class="block b_" id="_15_1"></div>
+            <div class="block b_" id="_15_2"></div>
+            <div class="block b_" id="_15_3"></div>
+            <div class="block b_" id="_15_4"></div>
+            <div class="block b_" id="_15_5"></div>
+            <div class="block b_" id="_15_6"></div>
+            <div class="block b_" id="_15_7"></div>
+            <div class="block b_" id="_15_8"></div>
+            <div class="block b_" id="_15_9"></div>
+            <div class="block b_" id="_15_10"></div>
+            <div class="block b_" id="_15_11"></div>
+            <div class="block b_" id="_15_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__16">
+            <div class="block wall"></div>
+            <div class="block b_" id="_16_1"></div>
+            <div class="block b_" id="_16_2"></div>
+            <div class="block b_" id="_16_3"></div>
+            <div class="block b_" id="_16_4"></div>
+            <div class="block b_" id="_16_5"></div>
+            <div class="block b_" id="_16_6"></div>
+            <div class="block b_" id="_16_7"></div>
+            <div class="block b_" id="_16_8"></div>
+            <div class="block b_" id="_16_9"></div>
+            <div class="block b_" id="_16_10"></div>
+            <div class="block b_" id="_16_11"></div>
+            <div class="block b_" id="_16_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__17">
+            <div class="block wall"></div>
+            <div class="block b_" id="_17_1"></div>
+            <div class="block b_" id="_17_2"></div>
+            <div class="block b_" id="_17_3"></div>
+            <div class="block b_" id="_17_4"></div>
+            <div class="block b_" id="_17_5"></div>
+            <div class="block b_" id="_17_6"></div>
+            <div class="block b_" id="_17_7"></div>
+            <div class="block b_" id="_17_8"></div>
+            <div class="block b_" id="_17_9"></div>
+            <div class="block b_" id="_17_10"></div>
+            <div class="block b_" id="_17_11"></div>
+            <div class="block b_" id="_17_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__18">
+            <div class="block wall"></div>
+            <div class="block b_" id="_18_1"></div>
+            <div class="block b_" id="_18_2"></div>
+            <div class="block b_" id="_18_3"></div>
+            <div class="block b_" id="_18_4"></div>
+            <div class="block b_" id="_18_5"></div>
+            <div class="block b_" id="_18_6"></div>
+            <div class="block b_" id="_18_7"></div>
+            <div class="block b_" id="_18_8"></div>
+            <div class="block b_" id="_18_9"></div>
+            <div class="block b_" id="_18_10"></div>
+            <div class="block b_" id="_18_11"></div>
+            <div class="block b_" id="_18_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line" id="__19">
+            <div class="block wall"></div>
+            <div class="block b_" id="_19_1"></div>
+            <div class="block b_" id="_19_2"></div>
+            <div class="block b_" id="_19_3"></div>
+            <div class="block b_" id="_19_4"></div>
+            <div class="block b_" id="_19_5"></div>
+            <div class="block b_" id="_19_6"></div>
+            <div class="block b_" id="_19_7"></div>
+            <div class="block b_" id="_19_8"></div>
+            <div class="block b_" id="_19_9"></div>
+            <div class="block b_" id="_19_10"></div>
+            <div class="block b_" id="_19_11"></div>
+            <div class="block b_" id="_19_12"></div>
+            <div class="block wall"></div>
+        </div>
+        <div class="line">
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+            <div class="block wall"></div>
+        </div>
+    </div>
+    <div class="openbox" id="_opengame"> 
+        <div class="text1 text">宇哥の</div>
+        <div class="gameover text" id="gameover">游戏结束</div>
+        <div class="text2 text">俄罗斯方块</div>
+        <div class="a"  id="openbutton" onclick="opengame()">
+            <a class="aa">开始游戏</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
